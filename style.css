@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #5d5d5d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#logo {
+    animation: fill 0.5s ease forwards 3s;
+}
+#text {
+    margin: 30px 0;
+    animation: fill 0.5s ease forwards 3s;
+}
+
+#logo path:nth-child(1) {
+    stroke-dasharray: 403;
+    stroke-dashoffset: 403;
+    animation: line-anime 2s ease forwards;
+}
+#logo path:nth-child(2) {
+    stroke-dasharray: 495;
+    stroke-dashoffset: 495;
+    animation: line-anime 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+    stroke-dasharray: 403;
+    stroke-dashoffset: 403;
+    animation: line-anime 2s ease forwards;
+}
+#logo path:nth-child(4) {
+    stroke-dasharray: 1015;
+    stroke-dashoffset: 1015;
+    animation: line-anime 2s ease forwards 0.5s;
+}
+#logo path:nth-child(5) {
+    stroke-dasharray: 165;
+    stroke-dashoffset: 165;
+    animation: fill-eyes 0.5s ease forwards 3s;
+}
+
+#text path:nth-child(1) {
+    stroke-dasharray: 96;
+    stroke-dashoffset: 96;
+}
+#text path:nth-child(2) {
+    stroke-dasharray: 122;
+    stroke-dashoffset: 122;
+}
+#text path:nth-child(3) {
+    stroke-dasharray: 78;
+    stroke-dashoffset: 78;
+}
+#text path:nth-child(4) {
+    stroke-dasharray: 122;
+    stroke-dashoffset: 122;
+}
+#text path:nth-child(5) {
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+}
+#text path:nth-child(6) {
+    stroke-dasharray: 123;
+    stroke-dashoffset: 123;
+}
+#text path:nth-child(7) {
+    stroke-dasharray: 127;
+    stroke-dashoffset: 127;
+}
+#text path:nth-child(8) {
+    stroke-dasharray: 133;
+    stroke-dashoffset: 133;
+}
+
+@keyframes line-anime {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #4CFFEA;
+    }
+}
+@keyframes fill-eyes {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #fff;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #text {
+        width: 378px;
+        height: 52px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #logo {
+        width: 150px;
+        height: 204px;
+    }
+    #text {
+        width: 190px;
+        height: 27px;
+    }
+}
